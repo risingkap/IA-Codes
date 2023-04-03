@@ -1,0 +1,26 @@
+abstract class Cars {
+
+    public void porsche() {
+        System.out.println("Brand name is porsche!");
+    }
+
+}
+
+class porsche extends Cars{
+
+    public void tires() {
+        System.out.println("No tires yet!");
+    }
+
+}
+
+public class Abstraction {
+    
+    public static void main(String[] args) {
+        porsche c = new porsche();
+
+        c.porsche();
+        c.tires();
+    }
+}
+
